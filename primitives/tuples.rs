@@ -18,6 +18,10 @@ impl Display for Matrix {
     }
 }
 
+fn transpose(mat: Matrix) -> Matrix {
+    Matrix(mat.0, mat.2, mat.1, mat.3)
+}
+
 fn main() {
     // A tuple with a bunch of different types
     let long_tuple = (1u8, 2u16, 3u32, 4u64,
@@ -59,4 +63,5 @@ fn main() {
     let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
     println!("{}", matrix);
 
+    println!("{}", transpose(matrix));
 }
