@@ -135,8 +135,9 @@ fn handle_keys(root: &mut Root, player: &mut Object, map: &Map) -> bool {
 
 fn main() {
     let mut root = Root::initializer()
-        .font("arial10x10.png", FontLayout::Tcod)
+        .font("Sir_Henrys_32x32.png", FontLayout::AsciiInRow)
         .font_type(FontType::Greyscale)
+        // .font_dimensions(20, 20)
         .size(SCREEN_WIDTH, SCREEN_HEIGHT)
         .title("Rust/libtcod tutorial")
         .init();
